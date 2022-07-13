@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charsxet="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container show" id="main">
+        <p>Keep Your Notes</p>
+        <div id="savednotes" class="overflow">
+        </div>
+        <div class="btnclass">
+            <button class='btnbody' id="addbtn" onclick="show()">Add Task</button>
+        </div>
+    </div>
+    <div class="editor" id="taskeditor">
+        <div class="title">
+            <input type="text" name="Title" id="titletxt" placeholder="Title">
+        </div>
+        <div class="overflow desc">
+            <textarea name="discription" id="desctxt" cols="50" rows="10" placeholder="Description"></textarea>
+        </div>
+        <div class="btnclass">
+            <button class="btnbody" onclick='show()'>Discard</button>
+            <button class='btnbody' id='savebtn' onclick="show()">Save</button>
+        </div>
+    </div>
+    <p id="floatting" class="show">No Notes 🥺</p>
+    <script src="script.js"></script>
+</body>
+
+</html>
